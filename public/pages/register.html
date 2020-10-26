@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Connect Four</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container centered">
+        <h1 style="text-align: center;">Connect Four</h1><br>
+        <section id="content">
+            <form method='POST' id="register_info">
+                <h3>Register</h3>
+                <br><br>
+                <div>
+                    <input type="text" placeholder="Username" required="" id="username" />
+                </div>
+                <div>
+                    <input type="password" placeholder="Password" required="" id="password" />
+                </div>
+                <div>
+                    <input type="submit" value="Register"/>
+                    <a href="/login">Login</a>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>

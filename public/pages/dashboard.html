@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Connect Four</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h1>Connect 4</h1><br>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active game"><a onclick="game_button()">Game</a></li>
+                    <li class='profile'><a onclick="profile_button()">Profile</a></li>
+                    <li class='friends'><a onclick="friends_button()">Friends</a></li>
+                    <li class='history'><a onclick="history_button()">History</a></li>
+                    <li><a href='/logout' class="logout">Logout</a></li>
+                </ul><br>
+            </div>
+
+            <div class="col-sm-9">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/main.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>
